@@ -14,7 +14,7 @@ header {
     background-color: #055;
 }
 header h1 {
-    color: #FFFF00;
+    color: #FF0000;
     font-size: 230%;
 }
 header h2 {
@@ -40,10 +40,10 @@ header h2 {
     text-decoration: none;
 }
 #sitenav li a:hover {
-    color: #DDDD00;
+    color: #DD0000;
 }
 #main {
-    background-color: #055;
+    background-color: #000;
 }
 .content {
     background-color: white;
