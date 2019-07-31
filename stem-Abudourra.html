@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <script type="text/javascript" language="javascript">
+        function onButtonClick() {
+          var target = document.getElementById("output");
+          target.innerText = document.forms.id_form1.id_textBox1.value;
+          var text1 = document.forms.id_form1.id_textBox1.value; //Change thess words
+		var shift = 2; //This is decide how many number change
+		var array = ['a','b','c','d','e','f','g','h','i','j','k','l',
+		'm','n','o','p','q','r','s','t','u','v','w','x','y','z','a','b']//These are words you wantto change
+		for ( var i = 0; i < text1.length;i++){
+		pas = array.indexOf (text1[i]);
+		
+		//change document.write below to a string.  You need a variable.
+		document.write(array[pas + shift]);
+		
+		}
+		var output = new string(text1[i]);// this code is effect to how many number changeing
+
+        }
+  </script>
+
+</head>
+<body>
+  <form name="form1" id="id_form1" action="">
+    <input name="textBox1" id="id_textBox1" type="text" value="" />
+    <input type="button" value="Print" onclick="onButtonClick();" />
+  </form>
+  <hr/>
+  <div id="output"></div>
+
+</body>
+</html>
